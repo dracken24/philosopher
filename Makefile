@@ -6,7 +6,7 @@
 #    By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/11 12:00:19 by nadesjar          #+#    #+#              #
-#    Updated: 2022/07/06 14:55:22 by nadesjar         ###   ########.fr        #
+#    Updated: 2022/07/06 15:40:01 by nadesjar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,6 @@ $(NAME): $(OBJS)
 	@echo $(LILAS)"COMPILING PHILOSOPHER..."$(RESET)
 	gcc $(NAME) $(OBJS) $(FLAGS) -o $(NAME)
 	@echo $(LIGHT_GREEN)"PHILOSOPHER READY :)"$(RESET)
-	./so_long map/map_01.ber
 
 $(PATH_OBJS)%.o:	$(PATH_SRC)%.c
 	@mkdir -p $(PATH_OBJS)
